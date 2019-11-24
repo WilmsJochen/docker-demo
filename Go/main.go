@@ -1,23 +1,45 @@
 package main
 
 import (
-	"./src/controller"
-	"./src/router"
-	"github.com/gin-contrib/sessions"
-	"github.com/gin-contrib/sessions/cookie"
 	"github.com/gin-gonic/gin"
+	"net/http"
+	"os"
+	"fmt"
+	"io/ioutil"
 )
 
 func main() {
+    go sendHttpCall()
+
 	r := gin.Default()
 
-	store := cookie.NewStore([]byte("secret"))
-	r.Use(sessions.Sessions("mysession", store))
-
-	router.SessionRouter(r)
-	router.PersonRouter(r)
-
-	r.GET("/", controller.IndexController)
+	r.GET("/", Message)
 
 	r.Run() // listen and serve on 0.0.0.0:8080
+
+
+}
+
+func Message(c *gin.Context) {
+	c.String(http.StatusOK, "wE lOvE KUbErNetEs")
+}
+
+func sendHttpCall() {
+    url := os.Getenv("url")
+    if url == "" {
+        url = "http://localhost:8080"
+    }
+    fmt.Println("URL: ",url)
+
+    resp, err := http.Get(url)
+    if err != nil{
+        fmt.Println("something went wrong: ", err)
+    }
+    defer resp.Body.Close()
+
+    body, err :=  ioutil.ReadAll(resp.Body)
+    if err != nil{
+        fmt.Println("something went wrong reading body: ", err)
+    }
+    fmt.Println(string(body))
 }
