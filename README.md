@@ -2,9 +2,9 @@
 
 Good you found this git repo to start the exercise from.
  
-##Choose your language
+## Choose your language
 
-In this project you can find some basic examples for different programming languages.
+In this project you can find some basic examples for different programming languages. Have a quiick look on all the different dockerfiles and source code in these folders.
 Needless to say that this list of languages can be expanded. 
 
 ## google cloud
