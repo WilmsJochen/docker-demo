@@ -21,7 +21,7 @@ func main() {
 }
 
 func Message(c *gin.Context) {
-	c.String(http.StatusOK, "wE lOvE KUbErNetEs")
+	c.String(http.StatusOK, "Go says: wE lOvE KUbErNetEs")
 }
 
 func sendHttpCall() {
