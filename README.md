@@ -52,9 +52,9 @@ ls
 ### build your first docker image
 In this step we are going to build a docker image and push it to a docker repo.
 
-1) choose a programming language folder
+1) choose a programming language and functional folder (Server/Job). (You can repeat these steps later with another folder/code)
 ```
-cd Go/
+cd Go/Job
 ```
 
 2) build your docker image and name the image to your own name.
@@ -69,15 +69,15 @@ docker images
 ```
 docker tag YOUR_NAME YOUR_NAME:V1.0
 ```
-5) check your tagged image and those of your colleagues.
+5) check your tagged image.
 ```
 docker images
 ```
 6) tag your image again with the docker registry as prefix. 
-This is needed to push your local docker image to your repo where everyone can access it.
+This is needed to push your local docker image to the registry where everyone can access it.
 ```
 docker tag YOUR_NAME:V1.0 eu.gcr.io/kubernetes-talk-259721/YOUR_NAME:V1.0
 ```
 
-Congratulations! you managed to create your first docker image and make it accessible in a docker registry.
+Congratulations! you've managed to create your first docker image and make it publicly accessible in a docker registry.
 
