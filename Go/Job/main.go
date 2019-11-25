@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
 	"os"
 	"fmt"
@@ -9,27 +8,16 @@ import (
 )
 
 func main() {
-    go sendHttpCall()
-
-	r := gin.Default()
-
-	r.GET("/", Message)
-
-	r.Run() // listen and serve on 0.0.0.0:8080
-
-
+ sendHttpCall()
 }
 
-func Message(c *gin.Context) {
-	c.String(http.StatusOK, "Go says: wE lOvE KUbErNetEs")
-}
 
 func sendHttpCall() {
-    url := os.Getenv("url")
+    url := os.Getenv("URL")
     if url == "" {
         url = "http://localhost:8080"
     }
-    fmt.Println("URL: ",url)
+    fmt.Println("Request send to URL: ",url)
 
     resp, err := http.Get(url)
     if err != nil{
