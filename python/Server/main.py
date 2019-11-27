@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/YOUR_NAME')
 def hello():
     print('Http request Received')
     return "Python says: wE lOvE KUbErNetEs"

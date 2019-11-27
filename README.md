@@ -57,8 +57,14 @@ In this step we are going to build a docker image and push it to a docker repo. 
  cd Go/Server
  ```
 
-2) Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink.
-
+2) Modify the code:
+   - Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink. 
+   - Change the path of the server to your name. (`/YOUR_NAME`)
+ ```
+ nano main.py
+ nano main.go 
+ nano index.js
+ ```
 2) Build your docker image and name the image to your own name.
  ```
  docker build . --tag YOUR_NAME
