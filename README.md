@@ -1,6 +1,11 @@
 # Ex1: Build your own docker container and push it to the cloud.
 
 Good you found this git repo!
+
+**_IMPORTANT:_** Make sure to always replace YOUR_NAME with a lowercase name and use this name consistently. 
+If there are people with the same name in this group, please use your nicknames to avoid confusion.
+
+**_MOST IMPORTANT:_** please ask questions whenever you want.
  
 ## Choose your language
 
@@ -11,12 +16,11 @@ Needless to say that this list of languages can be expanded.
 To build this docker images, I set up a fake google account to log in to the google cloud console.
 Please follow theses steps:
 
-1) Go to the google cloud console: https://console.cloud.google.com/
+1) Go to the google cloud console: https://console.cloud.google.com/ .
+
+   **_NOTE:_**  If you use the chrome browser you should use an incognito window.
 
 2) Login as kubernetesTalk user with the credentials from the ppt.
-    
-   **_NOTE:_**  If you use the chrome browser you should probably add the kubernetestalk user in your browser.
-
 3) Use the navigation menu to navigate to the Kubenetes engine
 4) Connect to the cluster in a new terminal by pushing `connect` button
 5) Create a folder with your own name:
@@ -29,7 +33,7 @@ Please follow theses steps:
  cd YOUR_NAME
  ```
 
-From this terminal we can execute all commands for the next exercises.
+From this terminal we can execute all pre-installed commands for the next exercises.
 
 ## Instructions
 ### Checkout Git repo
@@ -54,17 +58,17 @@ In this step we are going to build a docker image and push it to a docker repo. 
 
 1) Choose a programming language you are the most familiar with.
  ```
- cd Go/Server
+ cd go/server
  ```
 
-2) Modify the code as you would like it:
-   - Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink. 
-   - Change the path of the server to your name. This path is necessary later on. (`/YOUR_NAME`)
+2) Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink. 
  ```
  nano main.py
  nano main.go 
  nano index.js
  ```
+**_NOTE:_**  To exit nano, press crtl+x -> press y (yes) -> press enter to save it in the same file.
+
 2) Build your docker image and name the image to your own name.
  ```
  docker build . --tag YOUR_NAME
