@@ -10,7 +10,8 @@ func main() {
 
 	r := gin.Default()
 
-	r.GET("/YOUR_NAME", Message)
+	r.GET("/", Message)
+	r.GET("/:any", Message)
 
 	r.Run() // listen and serve on 0.0.0.0:8080
 }

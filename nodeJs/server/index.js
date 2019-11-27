@@ -4,7 +4,7 @@ const port = process.env.PORT || 8080;
 
 const app = express();
 
-app.use('/YOUR_NAME', message);
+app.use('/', message);
 
 app.listen(port, () => {
     console.log(`Orchestrator listening on port ${port}`);
