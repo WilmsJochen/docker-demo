@@ -4,11 +4,11 @@ Good you found this git repo!
  
 ## Choose your language
 
-In this project you can find some basic examples for different programming languages. Have a quiick look on all the different dockerfiles and source code in these folders.
+In this project you can find some basic examples for different programming languages. Have a quick look on all the different dockerfiles and source code in these folders.
 Needless to say that this list of languages can be expanded. 
 
 ## google cloud
-To build this docker images, I set up a google account to log in to the google cloud console.
+To build this docker images, I set up a fake google account to log in to the google cloud console.
 Please follow theses steps:
 
 1) Go to the google cloud console: https://console.cloud.google.com/
@@ -31,35 +31,35 @@ Please follow theses steps:
 
 From this terminal we can execute all commands for the next exercises.
 
-##Instructions
+## Instructions
 ### Checkout Git repo
-To use our code on the virtual machine, we need to clone our git repo.
+To use our code on the virtual machine, we need to clone this git repo.
 
 1) Clone the git repo
  ```
  git clone https://github.com/WilmsJochen/ex1.git
  ```
-2) Change your directory to that repo
+2) Change your directory to the repo
  ```
  cd ex1
  ```
-3) Have a look on all the folders and files in that directory.
- Verify all the directories and files corresponds to the git repo.
+3) Have a look on all the folders and files.
+ Verify all the directories and files corresponds to this git repo.
   ```
  ls
   ```
 
 ### Build your first docker image
-In this step we are going to build a docker image and push it to a docker repo. For the next exercise it would be better to first build a server. If you have time left, you can always come back to here to build the job code.
+In this step we are going to build a docker image and push it to a docker repo. For the next exercise it would be better to first build a server. If you have time left, you can always come back to this step and build the job code.
 
 1) Choose a programming language you are the most familiar with.
  ```
  cd Go/Server
  ```
 
-2) Modify the code:
+2) Modify the code as you would like it:
    - Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink. 
-   - Change the path of the server to your name. (`/YOUR_NAME`)
+   - Change the path of the server to your name. This path is necessary later on. (`/YOUR_NAME`)
  ```
  nano main.py
  nano main.go 
@@ -79,6 +79,7 @@ In this step we are going to build a docker image and push it to a docker repo. 
  ```
  docker tag YOUR_NAME YOUR_NAME:V1.0
  ```
+
 5) Check your tagged image.
  ```
  docker images
@@ -96,11 +97,6 @@ This is needed to push your locally created docker image to a registry where eve
 
 Congratulations! You've managed to create your first docker image and make it publicly accessible in a docker registry.
 
-**_STOP:_** Too show you that we still have some issues, we can all run our container on the same VM and look what will happen.
- ```
- docker run YOUR_NAME
- ```
- To stop running this image, you need to execute crtl+C
  
 ## Tips
 
