@@ -13,14 +13,14 @@ In this project you can find some basic examples for different programming langu
 Needless to say that this list of languages can be expanded. 
 
 ## google cloud
-To build this docker images, I set up a fake google account to log in to the google cloud console.
-Please follow theses steps:
+To build this docker images, I created a bunch of fake google account to log in to the google cloud console.
+Please follow these steps:
 
 1) Go to the google cloud console: https://console.cloud.google.com/ .
 
    **_NOTE:_**  If you use the chrome browser you should use an incognito window.
 
-2) Login as kubernetesTalk user with the credentials from the ppt.
+2) Login with the provided credentials.
 3) Use the navigation menu to navigate to the Kubenetes engine
 4) Connect to the cluster in a new terminal by pushing `connect` button
 5) Create a folder with your own name:
@@ -61,7 +61,7 @@ In this step we are going to build a docker image and push it to a docker repo. 
  cd go/server
  ```
 
-2) Modify the message that the server will return to a personal message. This is the moment to send a love letter to a colleague :wink. 
+2) Modify the message that the server will return to a funny message.
  ```
  nano main.py
  nano main.go 
@@ -74,7 +74,7 @@ In this step we are going to build a docker image and push it to a docker repo. 
  docker build . --tag YOUR_NAME
  ```
 
-3) Check your docker image.
+3) Check your docker images.
  ```
  docker images
  ```
