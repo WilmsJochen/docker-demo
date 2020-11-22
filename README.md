@@ -91,12 +91,12 @@ In this step we are going to build a docker image and push it to a docker repo. 
 6) Tag your image again with the docker registry as prefix. 
 This is needed to push your locally created docker image to a registry where everyone can access it.
  ```
- docker tag YOUR_NAME:V1.0 eu.gcr.io/kubernetes-talk-259721/YOUR_NAME:V1.0
+ docker tag YOUR_NAME:V1.0 eu.gcr.io/kubernetestalk-295018/YOUR_NAME:V1.0
  ```
 
 7) Push this tagged image to the docker registry.
  ```
- docker push eu.gcr.io/kubernetes-talk-259721/YOUR_NAME:V1.0
+ docker push eu.gcr.io/kubernetestalk-295018/YOUR_NAME:V1.0
  ```
 
 Congratulations! You've managed to create your first docker image and make it publicly accessible in a docker registry.
