@@ -47,16 +47,16 @@ To use our code on the virtual machine, we need to clone this git repo.
  ```
  cd ex1
  ```
-3) Have a look on all the folders and files.
+3) Have a look in all the folders and files.
  Verify all the directories and files corresponds to this git repo.
   ```
  ls
   ```
 
 ### Build your first docker image
-In this step we are going to build a docker image and push it to a docker repo. For the next exercise it would be better to first build a server. If you have time left, you can always come back to this step and build the job code.
+In this step we are going to build a docker image and push it to a docker repo. We will start with the server code as we will deploy this to kubernetes in the next exercises. If you have time left at the end of the session you can come back to this exercise and build the job code as well.
 
-1) Choose a programming language you are the most familiar with.
+1) Choose the programming language you are the most familiar with.
  ```
  cd go/server
  ```
@@ -89,7 +89,7 @@ In this step we are going to build a docker image and push it to a docker repo. 
  docker images
  ```
 6) Tag your image again with the docker registry as prefix. 
-This is needed to push your locally created docker image to a registry where everyone can access it.
+This is needed to push your locally created docker image to our docker registry on google cloud where everyone that has access to the project can access it.
  ```
  docker tag YOUR_NAME:V1.0 eu.gcr.io/kubernetestalk-295018/YOUR_NAME:V1.0
  ```
@@ -99,7 +99,9 @@ This is needed to push your locally created docker image to a registry where eve
  docker push eu.gcr.io/kubernetestalk-295018/YOUR_NAME:V1.0
  ```
 
-Congratulations! You've managed to create your first docker image and make it publicly accessible in a docker registry.
+Congratulations! You've managed to create your first docker image and make it accessible in a docker registry. 
+
+**Note** There are many docker registries that you can use. We are using the private Google Cloud registries for this exercise, but if you want to make your container open to the world something like [docker hub](https://hub.docker.com/) might be more suitable.
 
  
 ## Tips
