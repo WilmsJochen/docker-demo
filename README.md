@@ -54,7 +54,7 @@ To use our code on the virtual machine, we need to clone this git repo.
   ```
 
 ### Build your first docker image
-In this step we are going to build a docker image and push it to a docker repo. We will start with the server code as we will deploy this to kubernetes in the net exercises. If you have time left at the end of the session you can come back to this exercise and build the job code as well.
+In this step we are going to build a docker image and push it to a docker repo. We will start with the server code as we will deploy this to kubernetes in the next exercises. If you have time left at the end of the session you can come back to this exercise and build the job code as well.
 
 1) Choose the programming language you are the most familiar with.
  ```
