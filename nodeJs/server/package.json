@@ -1,6 +1,7 @@
 {
   "name": "kubernetestalk",
   "version": "1.0.0",
+  "private": true,
   "description": "a nodejs project to explain docker and kubernetes",
   "main": "index.js",
   "scripts": {
