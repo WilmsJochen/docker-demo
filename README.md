@@ -41,7 +41,7 @@ To use our code on the virtual machine, we need to clone this git repo.
 
 1) Clone the git repo
  ```
- git clone https://github.com/WilmsJochen/ex1.git
+ git clone https://github.com/WilmsJochen/docker-demo.git
  ```
 2) Change your directory to the repo
  ```
