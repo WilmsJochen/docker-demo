@@ -55,6 +55,12 @@ In this step we are going to build a docker image and push it to a docker repo. 
  docker build . --tag YOUR_NAME
  ```
 
+**_NOTE:_** When you work on one of the newer macbooks with silicon processors, you have to set the platform while building the docker image. 
+ ```
+ docker build --platform linux/amd64 . --tag YOUR_NAME
+ ```
+
+
 3) Check your docker images.
  ```
  docker images

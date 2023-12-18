@@ -7,7 +7,7 @@ const app = express();
 app.use('/', message);
 
 app.listen(port, () => {
-    console.log(`Orchestrator listening on port ${port}`);
+    console.log(`Server listening on port ${port}`);
 });
 
 async function message (req, res) {
